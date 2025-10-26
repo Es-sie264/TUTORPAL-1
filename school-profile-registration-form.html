@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TutorPal | Home</title>
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="form-container">
+    <h2>School Profile Registration</h2>
+    <form action="/submit-school-profile" method="POST" enctype="multipart/form-data">
+      
+      <!-- School Information -->
+      <fieldset>
+        <legend>School Information</legend>
+        <label for="schoolName">School Name</label>
+        <input type="text" id="schoolName" name="schoolName" required>
+
+        <label for="schoolType">Type of School</label>
+        <select id="schoolType" name="schoolType" required>
+          <option value="">Select</option>
+          <option value="Public">Public</option>
+          <option value="Private">Private</option>
+          <option value="Charter">Charter</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="region">Region/Province</label>
+        <input type="text" id="region" name="region" required>
+
+        <label for="postal">Postal Code</label>
+        <input type="text" id="postal" name="postal" required>
+
+        <label for="schoolEmail">School Email</label>
+        <input type="email" id="schoolEmail" name="schoolEmail" required>
+
+        <label for="schoolPhone">Phone Number</label>
+        <input type="tel" id="schoolPhone" name="schoolPhone" required>
+
+        <label for="website">Website (optional)</label>
+        <input type="url" id="website" name="website">
+      </fieldset>
+
+      <!-- Administrative Contact -->
+      <fieldset>
+        <legend>Administrative Contact</legend>
+        <label for="adminName">Principal/Administrator Name</label>
+        <input type="text" id="adminName" name="adminName" required>
+
+        <label for="adminRole">Position/Role</label>
+        <input type="text" id="adminRole" name="adminRole" required>
+
+        <label for="adminEmail">Email</label>
+        <input type="email" id="adminEmail" name="adminEmail" required>
+
+        <label for="adminPhone">Phone Number</label>
+        <input type="tel" id="adminPhone" name="adminPhone" required>
+      </fieldset>
+
+      <!-- School Details -->
+      <fieldset>
+        <legend>School Details</legend>
+        <label for="grades">Grades / Levels Offered</label>
+        <input type="text" id="grades" name="grades" required>
+
+        <label for="numStudents">Number of Students</label>
+        <input type="number" id="numStudents" name="numStudents" required>
+
+        <label for="subjects">Subjects Offered</label>
+        <input type="text" id="subjects" name="subjects" placeholder="e.g., Math, Science, Languages" required>
+
+        <label for="languages">Preferred Tutor Languages</label>
+        <input type="text" id="languages" name="languages">
+
+        <label for="specialPrograms">Special Programs (optional)</label>
+        <input type="text" id="specialPrograms" name="specialPrograms">
+      </fieldset>
+
+      <!-- Tutoring Needs -->
+      <fieldset>
+        <legend>Tutoring Needs</legend>
+        <label for="tutoringSubjects">Subjects Needing Tutors</label>
+        <input type="text" id="tutoringSubjects" name="tutoringSubjects" required>
+
+        <label for="numTutors">Number of Tutors Required</label>
+        <input type="number" id="numTutors" name="numTutors" required>
+
+        <label for="sessionType">Preferred Session Type</label>
+        <select id="sessionType" name="sessionType" required>
+          <option value="">Select</option>
+          <option value="One-on-One">One-on-One</option>
+          <option value="Group">Group</option>
+          <option value="Online">Online</option>
+          <option value="In-person">In-person</option>
+        </select>
+
+        <label for="schedule">Preferred Schedule / Days</label>
+        <input type="text" id="schedule" name="schedule" placeholder="e.g., Mon-Fri, 3-5 PM" required>
+      </fieldset>
+
+      <!-- Additional Information -->
+      <fieldset>
+        <legend>Additional Information</legend>
+        <label for="notes">Notes / Mission (optional)</label>
+        <textarea id="notes" name="notes" rows="3"></textarea>
+
+        <label for="logo">Upload School Logo (optional)</label>
+        <input type="file" id="logo" name="logo" accept="image/*">
+      </fieldset>
+
+      <!-- Account Settings -->
+      <fieldset>
+        <legend>Account Settings</legend>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+         <p><a href="terms-and-conditions.html"> click here</a> to read terms and conditions.</p>
+         
+        <label class="checkbox">
+        <input type="checkbox" name="terms" required>
+           
+          I agree to the Terms & Conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Register School</button>
+    </form>
+  </div>
+</body>
+</html>
